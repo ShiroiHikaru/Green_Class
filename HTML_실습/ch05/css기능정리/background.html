@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    
+    *{
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .multibg{
+      background: url(./img/mass.jpg) no-repeat, url(./img/NqwfLY8I_400x400.jpg) no-repeat right top, url(./img/original.jpg);
+      text-align: center;
+      color: wheat;
+      margin: 0;
+      width: 100%;
+    }
+
+    p{
+      font-size: 20px;
+    }
+
+    div{
+      border: 1px solid black;
+      width: 300px;
+      height: 200px;
+      margin: 5px;
+      float: left;
+      background: url(./img/mass.jpg);
+      color: white;
+      font-weight: bold;
+    }
+
+    .box_rel{
+      background-size: 100% 100%;
+    }
+
+    .box_abs{
+      background-size: 50px 50px;
+    }
+
+    .box_cover{
+      background-size: cover;
+    }
+
+    .box_contain{
+      background-size: contain;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="multibg">
+    <h1>background 실습을 해보자!</h1>
+    <p>여기는 background 연습실입니다.</p>
+  </div>
+
+  <h2>배경 이미지 크기 조절</h2>
+  <div class="box_org">원본크기</div>
+  <div class="box_rel">x%, y%(비율사용)</div>
+  <div class="box_abs">고정값사용</div>
+  <div class="box_cover">컨텐츠크기에 맞게</div>
+  <div class="box_contain">컨텐츠 크기에 맞춰 비율고정</div>
+</body>
+</html>

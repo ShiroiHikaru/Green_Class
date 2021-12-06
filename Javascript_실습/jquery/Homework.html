@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeWork</title>
+  <style>
+    body{font-size: 24px;}
+    .tomato{background: tomato;}
+    .highlight{background: turquoise; color: blue;}
+    .boxhover{width: 600px; height: 500px; border: 1px solid #000;}
+  </style>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#box").click(function(){
+        $("#box").toggleClass("highlight");
+      });
+      $(".click").click(function(){
+        $(.boxhover).toggleClass
+      });
+    });
+
+
+  </script>
+</head>
+<body>
+  <div id="box">
+    click하면 버튼 색이 바뀝니다.
+  </div>
+  <div id="boxtap">
+    click하면 버튼 색이 바뀝니다.
+  </div>
+  <button type="button" class="click">클릭</button>
+  <div class="boxhover">
+    까꿍
+  </div>
+</body>
+</html>

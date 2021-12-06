@@ -1,0 +1,32 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .box{
+        border: 3px solid black;
+        width: 100px;
+        height: 100;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      .two{
+        /* border-radius: 왼쪽 위 / 오른쪽 위 / 오른쪽 아래 / 왼쪽 아래 */
+        border-radius: 50px 50px 20px 20px;
+      }
+
+      .three{
+        /* 정사각형 크기면 크기의 1/2비율로 원모양 가능 - (원의 가까운 형태) */
+        border-radius: 50px;
+        /* 크기를 맞추면 진짜 원 */
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+    <div class="box two"></div>
+    <div class="box three"></div>
+  </body>
+</html>

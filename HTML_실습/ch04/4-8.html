@@ -1,0 +1,117 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        *{
+          box-sizing: border-box;
+        }
+
+        body{
+          width: 700px;
+          margin: 0 auto;
+        }
+
+        header,
+        nav,
+        article,
+        aside,
+        footer{
+          background-color: greenyellow;
+        }
+        
+        nav{
+        /* 스크롤영역 밖일 때는 원래 배열방식대로 */
+        /* 스크롤영역 안일 때는 Fixed */
+          position: sticky;
+          z-index: 9999;
+          top: 0px;
+        }
+
+        nav ul{
+          padding: 0;
+          text-align: center;
+        }
+        
+        nav li{
+          display: inline-block;
+          margin-left: 2rem;
+        }
+
+        nav li:first-child{
+          margin-left: 0;
+        }
+
+
+        aside{
+          width: 200px;
+          float: left;
+          position: sticky;
+          top: 5.5rem;
+        }
+
+        article{
+          /* 전체크기 - 마진오른쪽 - aside 크기 */
+          width: calc(100% - 1rem - 200px);
+          float: left;
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+        }
+
+
+        section{
+          /* 스크롤 안쪽으로 들어왔을 때만 마진값을 적용 */
+          scroll-margin-top: 8rem;
+        }
+
+
+
+        footer{
+          /* 플로팅이 끝나는 다음 요소에는 clear를 해줘야함 */
+          clear: both;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>header</h1>
+    </header>
+    <nav>
+      <h1>Nav</h1>
+      <ul>
+        <li><a href="#menu-1">Menu1</a></li>
+        <li><a href="#menu-2">Menu2</a></li>
+        <li><a href="#menu-3">Menu3</a></li>
+        
+      </ul>
+    </nav>
+    <article>
+        <section id="menu-1">
+          <h2>Menu1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+        </section>
+        <section id="menu-2">
+          <h2>Menu2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+        </section>
+        <section id="menu-3">
+          <h2>Menu3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam nemo praesentium quia eum laudantium quas quos quaerat, nisi laborum. Nisi tempora cumque, error corrupti maxime odit quae pariatur odio.</p>
+        </section>
+    </article>
+    <aside>
+      <h2>aside</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda doloribus doloremque fuga molestiae vel odit, voluptatem quas. Iure odio perspiciatis, eius, fugit velit magnam assumenda minus exercitationem, nostrum ullam sapiente!</p>
+    </aside>
+    <footer>
+      <h2>footer</h2>
+      <p>그린컴퓨터학원강남 - 서울시 강남구 논현동</p>
+    </footer> 
+  </body>
+</html>

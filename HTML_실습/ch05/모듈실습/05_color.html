@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_color</title>
+  <style>
+    input{
+      width: 200px;
+      height: 70px;
+      border: 2px solid #ccc;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: pink;
+      cursor:pointer;
+    }
+
+    input:hover{
+      background: yellow;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <input type="button" id="btn" value="click">
+  <script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click',function(){
+      alert('Hi! my Name is Hee Yeon!');
+    })
+  </script>
+</body>
+</html>

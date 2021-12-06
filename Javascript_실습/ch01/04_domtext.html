@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체접근</title>
+</head>
+<body>
+  <p id="text">클릭한 버튼에 따라 다른 스타일이 적용됩니다.</p>
+  <button type="button" onclick="redColor()">빨강</button>
+  <button type="button" onclick="greenColor()">초록</button>
+  <button type="button" onclick="blueColor()">파랑</button>
+</body>
+
+<script type="text/javascript">
+  // function color(colorchip){
+  //   let colorchange = document.getElementById("text");
+  //   colorchange.style.color=colorchip;
+  // };
+
+  function redColor(){
+    var txt = document.getElementById("text");
+    txt.style.color = "red";
+  };
+
+  function greenColor(){
+    var txt = document.getElementById("text");
+    txt.style.color = "green";
+  };
+
+  function blueColor(){
+    var txt = document.getElementById("text");
+    txt.style.color = "blue";
+  };
+</script>
+</html>

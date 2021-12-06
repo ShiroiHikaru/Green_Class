@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_transition</title>
+  <style>
+
+.mouse{
+      background: #73e497;
+      width: 200px;
+      height: 50px;
+      margin: 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .box2{
+      display: table;
+    }
+
+    .mouseover{
+      background: #73e497;
+      width: 200px;
+      height: 50px;
+      margin: 10px;
+      transition: 1s;
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .mouseover:hover{
+      width:500px
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="mouse">mousover</div>
+  </div>
+  <br>
+  <div class="box2">
+    <div class="mouseover">mousover</div>
+  </div>
+</body>
+</html>

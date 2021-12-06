@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animate</title>
+  <style>
+   .m1{width: 200px; height: 200px; overflow: hidden; margin-bottom: 20px}
+   .m1 img{width: 200px; height: 200px; position: relative;}
+   .m2{width: 200px; height: 200px; overflow: hidden; margin-bottom: 20px}
+   .m2 img{width: 200px; height: 200px; position: relative;}
+   .m2 img:hover{transform: scale(1.1, 1.1); transition: transform 0.5s;}
+  </style>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".m1 img").mouseenter(function(){
+        $(this).animate({width:220, height: 220, left:-20, top: 0}, 0.5);
+      });
+
+      $(".m1 img").mouseleave(function(){
+        $(this).animate({width:200, height: 200, left:0, top:0});
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="m1">
+    <img src="images/pic1.jpg" alt="">
+  </div>
+  <div class="m2">
+    <img src="images/pic2.jpg" alt="">
+  </div>
+</body>
+</html>

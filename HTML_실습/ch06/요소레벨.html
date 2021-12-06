@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요소레벨</title>
+  <style>
+
+
+
+    p{display: inline;}
+    .box{
+      border: 5px solid red;
+      height: 100px;
+      overflow-y: scroll;
+      width: 1200px;
+    }
+
+    a{width: 200px; height: 200px; border: 2px solid red; display: flex;}
+
+
+  
+
+
+    .border{
+      width: 1000px;
+      padding: 50px;
+      background-color: aqua;
+      box-sizing: border-box;
+    }
+
+    #main{margin: auto; width: 850px; height: 200px;}
+
+    #header{width: 800px; height: 150px; background-color: orange;margin: auto; }
+    #lnb{width: 200px; height: 400px; background-color:green; float: left;}
+    #content{width: 600px; height: 400px; background-color: magenta; float: left;}
+    #footer{width: 850px; height: 200px; background-color: cornflowerblue; /*clear: both;*/margin: auto;}
+
+    
+  </style>
+</head>
+<body>
+  <h1>Block 요소</h1>요소레벨은 태그가 <div>어떻게 보여지는가</div>에 대한 구분입니다.<br><br>
+  요소레벨은 태그가 <p>어떻게 보여지는가</p>에 대한 구분입니다.
+
+  <div class="box">
+    <h2>overflow</h2>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+    <p>블럭 요소는 독립된 행을 가지는 요소입니다.</p>
+  </div>
+
+  <p>인라인 요소는 <a href="">위치와 크기를</a>지정할 수 없습니다.</p>
+  
+
+  <div class="border">
+    <h2>lorem</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magnam alias voluptates dicta iure at voluptate quaerat itaque id dolore voluptatem commodi blanditiis, reprehenderit pariatur, perspiciatis laborum in sed eos!</p>
+  </div>
+
+<div id="container">
+  <div id="header">header</div>
+  <div id="main">
+    <div id="lnb">lnb</div>
+    <div id="content">content</div>
+  </div>
+  <div id="footer">footer</div>
+</div>
+</body>
+</html>

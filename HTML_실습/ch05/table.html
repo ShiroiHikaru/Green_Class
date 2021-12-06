@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  table{
+    border: 1px solid black;
+    font-size: 24px;
+    border-collapse: collapse;
+  }
+
+  caption{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  th{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .sel{
+    background-color: #0077ff;
+    color:#fff
+  }
+
+  
+</style>
+<body>
+  <table border="1" summary="삼성, 애플 디바이스 판매가격" >
+  <caption>제조사별 판매가격</caption>
+    <thead>
+      <tr class="sel">
+        <th>구분</th>
+        <th id="s">삼성</th>
+        <th id="a">애플</th>
+      </tr>
+    </thead> 
+  
+    <tfoot>
+      <tr>
+        <th>합계</th>
+        <td>320,000</td>
+        <td>350,000</td>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+        <th id="t">태블릿</th>5
+        <td headers="s t">170,000</td>
+        <td headers="a t">190,000</td>
+      </tr>
+      <tr>
+        <th id="p">스마트폰</th>
+        <td headers="s p">150,000</td>
+        <td headers="a p">160,000</td>
+      </tr>
+    </tbody>
+  </table>
+  <form action="">
+    <input type="text" placeholder="ID" autofocus required>
+    <input type="password" placeholder="PW" required>
+    <input type="submit" value="전송"><input type="reset" value="리셋">
+    <input type="date">
+    <input type="radio">
+    <input type="color"><input type="submit">
+    <input type="text" placeholder="TEXT" style="width: 300px; font-size: 18px;">
+  </form>
+</body>
+</html>
