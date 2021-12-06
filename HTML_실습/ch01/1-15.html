@@ -1,0 +1,40 @@
+<html lang="ko"> 
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!--표, 행(row)/열(column)-->
+  <!--border : 외곽선-->
+  <table border="1" cellspacing="0" width = "500"> 
+    <!--thead : 테이블의 헤더 부분 시맨틱 태그-->
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>연락처</th>
+      </tr>
+    </thead>
+    <tr>
+      <!--rowspan(row span)-->
+      <!--row : 행-->
+      <!--span : 늘려라-->
+      <td rowspan="2">홍길동</td>
+      <td>010-1234-5678</td>
+    </tr>
+    <tr>
+      <td>010-2534-4521</td>
+    </tr>
+    <tfoot>
+      <tr>
+        <!--colspan(column span)-->
+        <!--column : 열-->
+        <!--span : 늘려라-->
+        <td colspan="2">총 2건입니다.</td>
+        
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

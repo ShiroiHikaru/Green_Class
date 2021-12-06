@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body{
+  background: #000;
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+ul li{
+  list-style: none;
+}
+
+header{
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px 0px 3px 0px black;
+}
+
+header > nav{
+  width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+header > nav > h1{
+  height: 80px;
+  width: calc(1200px - 1000px);
+  font-size: 40px;
+  float: left;
+  line-height: 80px;
+  text-align: center;
+}
+
+header > nav > ul{
+  width: calc(1200px - 400px);  
+  height: 80px;
+  line-height: 50px;
+  float: right;
+  text-align: right;
+}
+
+header > nav > ul > li{
+  display: inline-block;
+  margin: 1rem;
+}
+
+header > nav > ul > .fc{
+  background-color: rgb(211, 175, 134);
+  color: black;
+  padding: 0px 20px 0px 20px;
+  
+  font-weight: bold;
+}
+
+
+.main .dott{
+  margin: auto;
+  width: 150px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 5px;
+  position: relative;
+  bottom: 200px;
+}
+
+.main .dott li{
+  display: inline-block;
+}
+
+section .banner{
+  text-align: center;
+  position:relative;
+  bottom: 180px;
+}
+
+section .banner img{
+  width: 1200px;
+}
+
+
+section .content{
+  background-color: black;
+  margin: 0 auto;
+  top: 500px;
+  width: 1200px;
+}
+
+section .content div{
+  float: left;
+  position: relative;
+  bottom: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section .content .box{
+  width: calc(1200px - 839px);
+  border: 1px solid white;
+  padding: 15px;
+  text-overflow: ellipsis;
+  float: left;
+  margin-right: 10px;
+}
+
+section .content .box2{
+  width: calc(1200px - 839px);
+  border: 1px solid white;
+  padding: 15px;
+  text-overflow: ellipsis;
+}
+
+section .content .box3{
+  width: calc(1200px - 840px);
+  border: 1px solid white;
+  padding: 15px;
+  float: right;
+  text-overflow: ellipsis;
+}
+
+aside{
+  position: relative;
+  bottom: 120px;
+}
+
+
+
+aside ul{
+  height: 35px;
+  width: 1200px;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+aside ul li{
+  line-height: 45px;
+  display: inline-block;
+  width: calc(1200px - 1036px);
+  margin-right: 5px;
+  text-align: center;
+  height: 50px;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+aside ul li:hover{
+  background-color: red;
+  color: black;
+}
+
+footer{
+  background-color: rgb(172, 15, 15);
+  display: flex;
+}
+
+footer .info{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 65px;
+}
+
+footer .info img{
+  float: left;
+}
+
+footer h1{
+  float: left;
+  margin-right: 15px;
+}
+
+footer p{
+  font-size: 14px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+footer  button{
+  float: right;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: black;
+  position: relative;
+  bottom: 55px;
+  right: 20px;
+  font-weight: bold;
+}

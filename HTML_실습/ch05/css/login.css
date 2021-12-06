@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: yellow;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+fieldset>legend{
+  text-align: center;
+  font-size: 50px;
+}
+
+form input{
+  width: calc(1200px - 400px);
+  height: 40px;
+  border-radius: none;
+  float: right;
+}
+
+fieldset .btn{
+  width: 200px;
+  border: 1px solid red;
+}
