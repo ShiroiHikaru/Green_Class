@@ -25,14 +25,14 @@
 
     /* header */
     header{
-        width: 800px;
+        width: 463px;
         height: 60px;
         margin: auto;
     }
 
     header h1{
         text-indent: -9999px;
-        width: 800px;
+        width: 463px;
         height: 58px;
         position: relative;
         height: 58px;
@@ -60,12 +60,12 @@
         padding: 10px;
         display: none;
         position: relative;
-        width: 778px;
+        width: 440px;
         z-index: 9999;
     }
 
     header .gnb ul li > ul{
-        width: 700px;
+        width: 300px;
     }
 
     header .gnb ul li a{
@@ -80,14 +80,15 @@
         display: block;
         text-indent: -9999px;
         position: absolute;
+        z-index: 9999;
         top: 0px;
-        right: 555px;
+        right: 720px;
     }
 
     header .search form{
         background: rgb(30, 49, 71);
         display: none;
-        width: 800px;
+        width: 463px;
         position: absolute;
         z-index: 9999;
     }
@@ -108,7 +109,7 @@
     }
 
     header .search form fieldset input{
-        width: 500px;
+        width: 270px;
         height: 30px;
         border: 2px solid #fff;
         background: rgba(255, 255, 255, 0);
@@ -127,12 +128,14 @@
 
     /* main */
     main{
-        width: 800px;
+        width: 463px;
+        height: 100%;
         margin: auto;
     }
 
     main .main_image{
         position: relative;
+        height: 325px;
     }
 
     main .main_image h2{
@@ -141,8 +144,8 @@
     }
 
     main .main_image .slider{
-        width: 800px;
-        height: 383px;
+        width: 463px;
+        height: 325px;
         padding: 0px;
         position: absolute;
         z-index: 1;
@@ -150,7 +153,8 @@
 
     /* 카테고리 */
     main .business_guide{
-        width: 800px;
+        width: 450px;
+        margin: auto;
     }
 
     main .business_guide h2{
@@ -159,8 +163,8 @@
 
     main .business_guide ul li{
         float: left;
-        width: 158px;
-        height: 120px;
+        width: 90px;
+        height: 80px;
     }
 
     main .business_guide ul li a{
@@ -237,7 +241,7 @@
     }
 
     main .community .notice, .news, .job_opening{
-        width: 390px;
+        width: 463px;
     }
 
     main .community .notice ul li{
@@ -245,12 +249,17 @@
         overflow: hidden;
         text-overflow: clip;
         white-space: nowrap;
+        display: none;
     }
 
     main .community .notice h3{
-        background: rgb(7, 46, 138);
-        color: #fff;
+        background: #fff;
+        color: #aaa;
+        border: 1px solid #ccc;
         margin: 0px;
+        width: 153px;
+        float: left;
+        text-align: center;
     }
 
     main .community .news ul li{
@@ -258,12 +267,17 @@
         overflow: hidden;
         text-overflow: clip;
         white-space: nowrap;
+        display: none;
     }
 
     main .community .news h3{
-        background: rgb(7, 46, 138);
-        color: #fff;
+        background: #fff;
+        color: #aaa;
+        border: 1px solid #ccc;
         margin: 0px;
+        width: 153px;
+        float: left;
+        text-align: center;
     }
 
     
@@ -271,19 +285,23 @@
         overflow: hidden;
         text-overflow: clip;
         white-space: nowrap;
+        clear: both;
     }
 
     main .community .job_opening h3{
         background: rgb(7, 46, 138);
         color: #fff;
         margin: 0px;
+        width: 153px;
+        float: left;
+        text-align: center;
     }
 
     /* 메뉴 */
 
     main .our_business{
-        width: 390px;
-        float: right;
+        width: 463px;
+       
     }
 
     main .our_business h2{
@@ -291,6 +309,11 @@
     }
 
     /* 열린경영 */
+
+    main .our_business .openBook_Management{
+        width: 463px;
+        float: right;
+    }
 
     main .our_business .openBook_Management h3{
         border: 1px solid #ccc;
@@ -302,7 +325,7 @@
 
     main .our_business .openBook_Management ul{
        background-color: #75b016; 
-       width: 370px;
+       width: 443px;
        height: 60px;
        padding: 10px;
     }
@@ -321,7 +344,7 @@
     /* 고객창구 */
 
     main .custom_center{
-        width: 390px;
+        width: 463px;
         float: right;
     }
 
@@ -336,7 +359,7 @@
 
     main .our_business .custom_center ul{
        background-color: #0f95b2; 
-       width: 370px;
+       width: 443px;
        height: 60px;
        padding: 10px;
     }
@@ -355,7 +378,7 @@
     /* KR 홍보 */
     
     main .kr_pr{
-        width: 390px;
+        width: 463px;
         float: right;
     }
 
@@ -370,7 +393,7 @@
 
     main .our_business .kr_pr ul{
        background-color: #6b63af; 
-       width: 370px;
+       width: 443px;
        height: 60px;
        padding: 10px;
     }
@@ -388,14 +411,14 @@
     
     footer{
         clear: both;
-        width: 800px;
+        width: 463px;
         margin: auto;
         border-top: #222 1px solid;
         margin-top: 60px;
     }
 
     footer .footer_link{
-        width: 780px;
+        width: 450px;
         margin: auto;
         position: relative;
     }
@@ -414,7 +437,7 @@
     footer .footer_link ul{
         background: #36353b;
         position: absolute;
-        width: 780px;
+        width: 450px;
         bottom: 25px;
         display: none;
     }
@@ -522,10 +545,10 @@
     <section class="main_image">
         <h2>공단소식</h2>
         <ul class="slider">
-            <li><a href="#"><img src="images/main_img1.jpg" alt="main01" width="800px"></a></li>
-            <li><a href="#"><img src="images/main_img2.jpg" alt="main02" width="800px"></a></li>
-            <li><a href="#"><img src="images/main_img3.jpg" alt="main03" width="800px"></a></li>
-            <li><a href="#"><img src="images/main_img4.jpg" alt="main04" width="800px"></a>
+            <li><a href="#"><img src="images/main_img1.jpg" alt="main01" width="800px" height="280px"></a></li>
+            <li><a href="#"><img src="images/main_img2.jpg" alt="main02" width="800px" height="280px"></a></li>
+            <li><a href="#"><img src="images/main_img3.jpg" alt="main03" width="800px" height="280px"></a></li>
+            <li><a href="#"><img src="images/main_img4.jpg" alt="main04" width="800px" height="280px"></a>
             </li>
         </ul>
     </section><!--main_image-->
