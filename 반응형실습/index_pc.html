@@ -3,21 +3,281 @@
 <head>
 <meta charset="utf-8">
 <title>한국철도시설공단</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 </head>
 <style>
-    body{margin: 0px; padding: 0px;}
+    body{
+        margin: 0px; 
+        padding: 0px;
+        border: 1px solid red;
+    }
 
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+    li{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+    /* header */
     header{
         width: 800px;
-        height: 50px;
-        border: 1px solid red;
+        height: 60px;
         margin: auto;
-        box-shadow: #000 0px 0px 5px 0px;
     }
 
     header h1{
         text-indent: -9999px;
+        width: 800px;
+        height: 58px;
+        position: relative;
+        height: 58px;
+        margin: 0px;
+    }
+
+    header h1 a{
+        width: 192px;
+        margin: auto;
+        display: block;
         background: url(images/header_logo.gif) no-repeat;
+    }
+
+    header .gnb h2{
+        background: url(images/header_menu.gif) no-repeat;
+        width: 58px;
+        height: 58px;
+        text-indent: -9999px;
+        position: absolute;
+        top: -20px;
+    }
+
+    header .gnb ul{
+        background: rgb(30, 49, 71);
+        padding: 10px;
+        display: none;
+    }
+
+    header .gnb ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header .search a{
+        background: url(images/header_search.gif) no-repeat;
+        width: 58px;
+        height: 58px;
+        display: block;
+        text-indent: -9999px;
+        position: absolute;
+        top: 0px;
+        right: 555px;
+    }
+
+    header .search form{
+        background: rgb(30, 49, 71);
+        display: none;
+    }
+
+    header .search form fieldset{
+        width: 700px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+
+    header .search form fieldset legend{
+        text-indent: -9999px;
+    }
+
+    header .search form fieldset label{
+       color: #fff;
+    }
+
+    header .search form fieldset input{
+        width: 500px;
+        height: 30px;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0);
+        margin-bottom: 20px;
+    }
+
+    header .search form fieldset button{
+        width: 70px;
+        margin: 0px;
+        height: 30px;
+        border: none;
+        background: #fff;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    /* main */
+    main{
+        width: 800px;
+        margin: auto;
+    }
+
+    main .main_image h2{
+        border: 1px solid red;
+        text-indent: -9999px;
+        display: none;
+    }
+
+    main .main_image .slider{
+        width: 800px;
+        height: 383px;
+        padding: 0px;
+    }
+
+    /* 카테고리 */
+    main .business_guide{
+        width: 800px;
+        border: 1px solid red;
+    }
+
+    main .business_guide h2{
+        display: none;
+    }
+
+    main .business_guide ul li{
+        float: left;
+        width: 158px;
+        height: 120px;
+        border: 1px solid red;
+    }
+
+    main .business_guide ul li a{
+        display: inline-block;
+        border: 1px solid green;
+        width: 158px;
+        height: 120px;
+        text-indent: -9999px;
+    }
+
+    main .business_guide ul .tab01{
+        background: url(images/business_01.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab02{
+        background: url(images/business_02.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab03{
+        background: url(images/business_03.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab04{
+        background: url(images/business_04.gif);
+        background-size: cover;
+    }
+    
+    main .business_guide ul .tab05{
+        background: url(images/business_05.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab06{
+        background: url(images/business_06.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab07{
+        background: url(images/business_07.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab08{
+        background: url(images/business_08.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab09{
+        background: url(images/business_09.gif);
+        background-size: cover;
+    }
+
+    main .business_guide ul .tab10{
+        background: url(images/business_10.gif);
+        background-size: cover;
+    }
+
+    main .community{
+        border: 1px solid red;
+        float: left;
+        clear: both;
+    }
+
+    main .community a{
+        color: #000;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    main .community h2{
+        display: none;
+    }
+
+    main .community .notice, .news, .job_opening{
+        margin-top: 30px;
+        width: 380px;
+        border: 1px solid red;
+    }
+
+    main .community .notice ul li{
+        list-style-type: disc;
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
+    }
+
+    main .community .notice h3{
+        background: rgb(7, 46, 138);
+        color: #fff;
+        margin: 0px;
+    }
+
+    main .community .news ul li{
+        list-style-type: disc;
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
+    }
+
+    main .community .news h3{
+        background: rgb(7, 46, 138);
+        color: #fff;
+        margin: 0px;
+    }
+
+    
+    main .community .job_opening ul li{
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
+    }
+
+    main .community .job_opening h3{
+        background: rgb(7, 46, 138);
+        color: #fff;
+        margin: 0px;
+    }
+
+    main .our_business{
+        border: 1px solid red;
+        width: 380px;
+        float: right;
+    }
+
+    footer{
+        clear: both;
     }
 </style>
 <body>
@@ -93,8 +353,8 @@
         <form name="" action="" method="">
             <fieldset>
                 <legend>검색</legend>
-                <label for="sch_text">입력</label>
-                <input type="text" name="sch_text" id="sch_text">
+                <label for="sch_text">검색어 입력</label>
+                <input type="text" name="sch_text" id="sch_text" placeholder="검색어를 입력하세요.">
                 <button type="submit">검색</button>
             </fieldset>
         </form>
@@ -104,11 +364,11 @@
 <main id="content" class="content">
     <section class="main_image">
         <h2>공단소식</h2>
-        <ul>
-            <li><a href="#">한국철도시설공단 비전</a></li>
-            <li><a href="#">해외철도사업 수주현황</a></li>
-            <li><a href="#">철도 자산 관리 및 개발</a></li>
-            <li><a href="#">철도 건설현장 조건에 최적화된 신기술 신공법</a>
+        <ul class="slider">
+            <li><a href="#"><img src="images/main_img1.jpg" alt="main01" width="800px"></a></li>
+            <li><a href="#"><img src="images/main_img2.jpg" alt="main02" width="800px"></a></li>
+            <li><a href="#"><img src="images/main_img3.jpg" alt="main03" width="800px"></a></li>
+            <li><a href="#"><img src="images/main_img4.jpg" alt="main04" width="800px"></a>
             </li>
         </ul>
     </section><!--main_image-->
@@ -117,16 +377,18 @@
     <section class="business_guide">
         <h2>업무안내</h2>
         <ul>
-            <li><a href="#">조직도</a></li>
-            <li><a href="#">담당자찾기</a></li>
-            <li><a href="#">사업추진현황</a></li>
-            <li><a href="#">공개자료실</a></li>
-            <li><a href="#">경영공시</a></li>
-            <li><a href="#">사전공개정보</a></li>
-            <li><a href="#">실적증명발급</a></li>
-            <li><a href="#">전자조달</a></li>
-            <li><a href="#">CPMS</a></li>
-            <li><a href="#">고객민원</a></li>
+            <li class="tab01"><a href="#">조직도</a></li>
+            <li class="tab02"><a href="#">담당자찾기</a></li>
+            <li class="tab03"><a href="#">사업추진현황</a></li>
+            <li class="tab04"><a href="#">공개자료실</a></li>
+            <li class="tab05"><a href="#">경영공시</a></li>
+        </ul>
+        <ul>
+            <li class="tab06"><a href="#">사전공개정보</a></li>
+            <li class="tab07"><a href="#">실적증명발급</a></li>
+            <li class="tab08"><a href="#">전자조달</a></li>
+            <li class="tab09"><a href="#">CPMS</a></li>
+            <li class="tab10"><a href="#">고객민원</a></li>
         </ul>
     </section><!--business_guide-->
 
@@ -164,7 +426,7 @@
     </article><!--community-->
     
     <article class="our_business">
-    <h2>공단소개</h2>
+        <h2>공단소개</h2>
         <section class="openBook_Management">
             <h3>열린경영</h3>
             <ul>
@@ -226,5 +488,23 @@
     <p>▲ TEL : 1588-7270(통화료 사용자 부담) ▲ FAX : 042-607-3629</p>
     <p>COPYRIGHT(C) 2016 BY KOREA RAIL NETWORK AUTHORITY. ALL RIGHTS RESERVED.</p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("header .gnb h2").click(function(){
+            $("header .gnb ul").slideToggle(500);
+        });
+        $("header .search a").click(function(){
+            $("header .search form").slideToggle(500);
+        });
+
+        $(".slider").bxSlider({
+            auto: true,
+            slideWidth: 800,
+            speed: 500
+        });
+    });
+</script>
 </body>
 </html>
