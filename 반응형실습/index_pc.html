@@ -60,6 +60,9 @@
         background: rgb(30, 49, 71);
         padding: 10px;
         display: none;
+        position: absolute;
+        width: 800px;
+        z-index: 9999;
     }
 
     header .gnb ul li a{
@@ -81,6 +84,9 @@
     header .search form{
         background: rgb(30, 49, 71);
         display: none;
+        width: 800px;
+        position: absolute;
+        z-index: 9999;
     }
 
     header .search form fieldset{
@@ -123,7 +129,6 @@
     }
 
     main .main_image h2{
-        border: 1px solid red;
         text-indent: -9999px;
         display: none;
     }
@@ -137,7 +142,6 @@
     /* 카테고리 */
     main .business_guide{
         width: 800px;
-        border: 1px solid red;
     }
 
     main .business_guide h2{
@@ -148,12 +152,10 @@
         float: left;
         width: 158px;
         height: 120px;
-        border: 1px solid red;
     }
 
     main .business_guide ul li a{
         display: inline-block;
-        border: 1px solid green;
         width: 158px;
         height: 120px;
         text-indent: -9999px;
@@ -210,9 +212,9 @@
     }
 
     main .community{
-        border: 1px solid red;
         float: left;
         clear: both;
+        margin-top: 30px;
     }
 
     main .community a{
@@ -226,9 +228,7 @@
     }
 
     main .community .notice, .news, .job_opening{
-        margin-top: 30px;
-        width: 380px;
-        border: 1px solid red;
+        width: 390px;
     }
 
     main .community .notice ul li{
@@ -270,14 +270,154 @@
         margin: 0px;
     }
 
+    /* 메뉴 */
+
     main .our_business{
-        border: 1px solid red;
-        width: 380px;
+        width: 390px;
         float: right;
     }
 
+    main .our_business h2{
+        display: none;
+    }
+
+    /* 열린경영 */
+
+    main .our_business .openBook_Management h3{
+        border: 1px solid #ccc;
+        height: 28px;
+        background: url(images/manage_01.gif) no-repeat;
+        background-position: right;
+        margin: 30px 0px 0px 0px;
+    }
+
+    main .our_business .openBook_Management ul{
+       background-color: #75b016; 
+       width: 370px;
+       height: 60px;
+       padding: 10px;
+    }
+
+    main .our_business .openBook_Management ul li{
+        font-size: 11px;
+        width: 90px;
+        float: left;
+    }
+
+    main .our_business .openBook_Management ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* 고객창구 */
+
+    main .custom_center{
+        width: 390px;
+        float: right;
+    }
+
+
+    main .our_business .custom_center h3{
+        border: 1px solid #ccc;
+        height: 28px;
+        margin: 0px;
+        background: url(images/manage_02.gif) no-repeat;
+        background-position: right;
+    }
+
+    main .our_business .custom_center ul{
+       background-color: #0f95b2; 
+       width: 370px;
+       height: 60px;
+       padding: 10px;
+    }
+
+    main .our_business .custom_center ul li{
+        font-size: 11px;
+        width: 90px;
+        float: left;
+    }
+
+    main .our_business .custom_center ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* KR 홍보 */
+    
+    main .kr_pr{
+        width: 390px;
+        float: right;
+    }
+
+
+    main .our_business .kr_pr h3{
+        border: 1px solid #ccc;
+        height: 28px;
+        margin: 0px;
+        background: url(images/manage_03.gif) no-repeat;
+        background-position: right;
+    }
+
+    main .our_business .kr_pr ul{
+       background-color: #6b63af; 
+       width: 370px;
+       height: 60px;
+       padding: 10px;
+    }
+
+    main .our_business .kr_pr ul li{
+        font-size: 11px;
+        width: 90px;
+        float: left;
+    }
+
+    main .our_business .kr_pr ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
     footer{
         clear: both;
+        width: 800px;
+        margin: auto;
+        border-top: #222 1px solid;
+        margin-top: 60px;
+    }
+
+    footer .footer_link{
+        width: 780px;
+        margin: auto;
+        position: relative;
+    }
+
+    footer .footer_link h2{
+        font-size: 15px;
+        height: 30px;
+        color: orange;
+        text-align: center;
+        border: 1px solid red;
+        border-radius: 10px;
+        background: url(images/arrow.gif) no-repeat #36353b;
+        background-position: right;
+        line-height: 30px;
+    }
+
+    footer .footer_link ul{
+        background: #36353b;
+        position: absolute;
+        width: 780px;
+        bottom: 20px;
+        display: none;
+    }
+
+    footer .footer_link ul li{
+        padding: 10px;
+    }
+
+    footer .footer_link ul li a{
+        color: #fff;
+        text-decoration: none;
     }
 </style>
 <body>
@@ -497,6 +637,10 @@
         });
         $("header .search a").click(function(){
             $("header .search form").slideToggle(500);
+        });
+
+        $("footer .footer_link h2").click(function(){
+            $("footer .footer_link ul").slideToggle(500);
         });
 
         $(".slider").bxSlider({
