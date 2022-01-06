@@ -38,12 +38,13 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 /* gnb */
 .gnb{
     /* position:fixed;
-    width:100%;
-    height:100%;
+  
     background:rgba(0, 0, 0, .7); */
     position:absolute;
     left:0;
     top:0;   
+    width:100%;
+    height:100%;
 }
 .gnb a{
     display:block;
@@ -132,7 +133,7 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 }
 
 /* main image */
-.main_image1{
+/* .main_image1{ */
     /* width:1263px;
     height:383px;
     background:url(images/main_img1.jpg) no-repeat;
@@ -160,7 +161,7 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
     background:url(images/main_img1.jpg) no-repeat;
     text-indent:-9999px;
     background-size:contain */
-}
+
 
 .main_image1 img{
     width:100%
@@ -212,7 +213,7 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 
 .notice h3{
     background: #0062c3;
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
     padding: 5px 10px;
     margin-bottom: 5px;
@@ -227,9 +228,147 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
     background: url(../images/bullet.png) no-repeat left center;
 }
 
+
+/* news */
+
+.news{
+    margin-bottom: 20px;
+}
+
+.news h3{
+    background: #0062c3;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.news li{
+    padding-left: 10px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: url(../images/bullet.png) no-repeat left center;
+}
+
+
+/* job_opening */
+
+.job_opening{
+    margin-bottom: 20px;
+}
+
+.job_opening h3{
+    background: #0062c3;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.job_opening li{
+    padding-left: 10px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: url(../images/bullet.png) no-repeat left center;
+}
+
 /* our_business */
 
 .our_business{
     width: 49%;
     float: left;
+    border: 1px solid #999;
+    box-sizing: border-box;
 }
+
+/* openBook_Management */
+
+.openBook_Management h3{
+   padding: 15px 0 5px 15px;
+   font-size: 13px;
+   background: url(../images/manage_01.gif) no-repeat right bottom;
+
+}
+
+
+.openBook_Management a{
+    color: #fff;
+}
+
+.openBook_Management ul{
+    background: #73b414;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.openBook_Management li{
+    background: url(../images/bullet.png) no-repeat left center;
+    padding-left: 5px;
+    margin-right: 20px;
+    float: left;
+    line-height: 22px;
+}
+
+
+/* customer_center */
+
+.customer_center h3{
+    padding: 15px 0 5px 15px;
+    font-size: 13px;
+    background: url(../images/manage_02.gif) no-repeat right bottom;
+ }
+ 
+ 
+ .customer_center a{
+     color: #fff;
+ }
+ 
+ .customer_center ul{
+     background: #0f95b2;
+     padding: 10px;
+     overflow: hidden;
+ }
+ 
+ .customer_center li{
+     background: url(../images/bullet.png) no-repeat left center;
+     padding-left: 5px;
+     margin-right: 20px;
+     float: left;
+     line-height: 22px;
+ }
+
+
+ /* kr_pr */
+
+ .kr_pr h3{
+    padding: 15px 0 5px 15px;
+    font-size: 13px;
+    background: url(../images/manage_02.gif) no-repeat right bottom;
+ 
+ }
+ 
+ 
+ .kr_pr a{
+     color: #fff;
+ }
+ 
+ .kr_pr ul{
+     background: #6b63af;
+     padding: 10px;
+     overflow: hidden;
+ }
+ 
+ .kr_pr li{
+     background: url(../images/bullet.png) no-repeat left center;
+     padding-left: 5px;
+     margin-right: 20px;
+     float: left;
+     line-height: 22px;
+ }
+
+
+
