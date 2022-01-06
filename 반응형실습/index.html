@@ -4,9 +4,49 @@
 <meta charset="utf-8">
 <title>한국철도시설공단</title>
 </head>
+<style>
+    body{font-family: "나눔고딕","돋움",serif, sans-serif; font-size: 12px; margin: 0px; padding: 0px;}
+
+    .content, .footer{
+        display: none;
+    }
+
+    /* header */
+    .header{
+        height: 58px;
+        border-top: #10218b 2px solid;
+        background: #fff;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 3px 3px 3px #999;
+    }
+
+    /* logo */
+    .logo{
+        width: 192px;
+        height: 58px;
+        background: url(images/header_logo.gif) no-repeat;
+        text-indent: -9999px;
+        margin: auto;
+    }
+
+    .logo a{
+        display: block;
+        height: 100%;
+    }
+
+    /* gnb */
+
+
+    .content{
+        background: #3399ff;
+        position: relative;
+        top: -40px;
+    }
+</style>
 <body>
 <header id="header" class="header">
-    <h1><a href="#">한국철도시설공단</a></h1>
+    <h1 class="logo"><a href="#">한국철도시설공단</a></h1>
 
     <nav class="gnb">
         <h2>주요메뉴</h2>
@@ -77,8 +117,8 @@
         <form name="" action="" method="">
             <fieldset>
                 <legend>검색</legend>
-                <label for="sch_text">입력</label>
-                <input type="text" name="sch_text" id="sch_text">
+                <label for="sch_text">검색어 입력</label>
+                <input type="text" name="sch_text" id="sch_text" placeholder="검색어를 입력하세요.">
                 <button type="submit">검색</button>
             </fieldset>
         </form>
@@ -88,11 +128,11 @@
 <main id="content" class="content">
     <section class="main_image">
         <h2>공단소식</h2>
-        <ul>
-            <li><a href="#">한국철도시설공단 비전</a></li>
-            <li><a href="#">해외철도사업 수주현황</a></li>
-            <li><a href="#">철도 자산 관리 및 개발</a></li>
-            <li><a href="#">철도 건설현장 조건에 최적화된 신기술 신공법</a>
+        <ul class="slider">
+            <li><a href="#"><img src="images/main_img1.jpg" alt="main01" width="800px"></a></li>
+            <li><a href="#"><img src="images/main_img2.jpg" alt="main02" width="800px"></a></li>
+            <li><a href="#"><img src="images/main_img3.jpg" alt="main03" width="800px"></a></li>
+            <li><a href="#"><img src="images/main_img4.jpg" alt="main04" width="800px"></a>
             </li>
         </ul>
     </section><!--main_image-->
@@ -101,16 +141,18 @@
     <section class="business_guide">
         <h2>업무안내</h2>
         <ul>
-            <li><a href="#">조직도</a></li>
-            <li><a href="#">담당자찾기</a></li>
-            <li><a href="#">사업추진현황</a></li>
-            <li><a href="#">공개자료실</a></li>
-            <li><a href="#">경영공시</a></li>
-            <li><a href="#">사전공개정보</a></li>
-            <li><a href="#">실적증명발급</a></li>
-            <li><a href="#">전자조달</a></li>
-            <li><a href="#">CPMS</a></li>
-            <li><a href="#">고객민원</a></li>
+            <li class="tab01"><a href="#">조직도</a></li>
+            <li class="tab02"><a href="#">담당자찾기</a></li>
+            <li class="tab03"><a href="#">사업추진현황</a></li>
+            <li class="tab04"><a href="#">공개자료실</a></li>
+            <li class="tab05"><a href="#">경영공시</a></li>
+        </ul>
+        <ul>
+            <li class="tab06"><a href="#">사전공개정보</a></li>
+            <li class="tab07"><a href="#">실적증명발급</a></li>
+            <li class="tab08"><a href="#">전자조달</a></li>
+            <li class="tab09"><a href="#">CPMS</a></li>
+            <li class="tab10"><a href="#">고객민원</a></li>
         </ul>
     </section><!--business_guide-->
 
@@ -148,7 +190,7 @@
     </article><!--community-->
     
     <article class="our_business">
-    <h2>공단소개</h2>
+        <h2>공단소개</h2>
         <section class="openBook_Management">
             <h3>열린경영</h3>
             <ul>
@@ -205,10 +247,10 @@
         </ul>
     </div><!--footer_link-->
 
-    <p>고객센터 1588-7270  상담시간 09:00 ~ 18:00 (토요일/공휴일 제외)
+    <p><strong>고객센터 1588-7270  상담시간 09:00 ~ 18:00 (토요일/공휴일 제외)</strong></p>
     <address>우)34618 대전광역시 동구 중앙로 242 한국철도시설공단</address>
-    <p>▲ TEL : 1588-7270(통화료 사용자 부담) ▲ FAX : 042-607-3629</p>
-    <p>COPYRIGHT(C) 2016 BY KOREA RAIL NETWORK AUTHORITY. ALL RIGHTS RESERVED.</p>
+    <p>▲ <span>TEL : 1588-7270(통화료 사용자 부담)</span> ▲ FAX : 042-607-3629</p>
+    <p>COPYRIGHT(C) <strong>2019 BY KOREA RAIL NETWORK AUTHORITY.</strong>ALL RIGHTS RESERVED.</p>
 </footer>
 </body>
 </html>

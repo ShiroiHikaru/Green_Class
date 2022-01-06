@@ -1,0 +1,19 @@
+body{font-family: "나눔고딕","돋움",serif, sans-serif; font-size: 12px;}
+
+.content, .footer{
+    display: none;
+}
+
+/* header */
+
+.header{
+    height: 58px;
+    border-top: #10218b 2px solid;
+    background: #ccc;
+}
+
+.content{
+    background: #3399ff;
+    position: relative;
+    top: -40px;
+}
