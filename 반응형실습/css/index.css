@@ -224,7 +224,7 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    background: url(../images/bullet.png) no-repeat;
+    background: url(../images/bullet.png) no-repeat left center;
 }
 
 /* our_business */
