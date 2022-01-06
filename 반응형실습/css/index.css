@@ -169,12 +169,16 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 /* cont wrap */
 .cont_wrap{
     padding: 0 2%;
+    margin-top: -20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -20px;
 }
 
 /* business_guide */
 
 .business_guide{
-
+    border-top: 2px solid #333;
 }
 
 .business_guide ul{
@@ -192,4 +196,40 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 
 .bg_margin{
     margin-top: -5px;
+}
+
+/* community */
+.community{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+
+/* notice */
+.notice{
+    margin-bottom: 20px;
+}
+
+.notice h3{
+    background: #0062c3;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.notice li{
+    padding-left: 10px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: url(../images/bullet.png) no-repeat;
+}
+
+/* our_business */
+
+.our_business{
+    width: 49%;
+    float: left;
 }
