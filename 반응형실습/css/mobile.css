@@ -1,0 +1,464 @@
+body{
+    margin: 0px; 
+    padding: 0px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* header */
+header{
+    width: 463px;
+    height: 60px;
+    margin: auto;
+}
+
+header h1{
+    text-indent: -9999px;
+    width: 463px;
+    height: 58px;
+    position: relative;
+    height: 58px;
+    margin: 0px;
+}
+
+header h1 a{
+    width: 192px;
+    margin: auto;
+    display: block;
+    background: url(../images/header_logo.gif) no-repeat;
+}
+
+header .gnb h2{
+    background: url(../images/header_menu.gif) no-repeat;
+    width: 58px;
+    height: 58px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0px;
+}
+
+header .gnb ul{
+    background: rgb(30, 49, 71);
+    padding: 10px;
+    display: none;
+    position: relative;
+    width: 440px;
+    z-index: 9999;
+}
+
+header .gnb ul li > ul{
+    width: 300px;
+}
+
+header .gnb ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header .search a{
+    background: url(../images/header_search.gif) no-repeat;
+    width: 58px;
+    height: 58px;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    right: 720px;
+}
+
+header .search form{
+    background: rgb(30, 49, 71);
+    display: none;
+    width: 463px;
+    position: absolute;
+    z-index: 9999;
+}
+
+header .search form fieldset{
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    border: none;
+}
+
+header .search form fieldset legend{
+    text-indent: -9999px;
+}
+
+header .search form fieldset label{
+   color: #fff;
+}
+
+header .search form fieldset input{
+    width: 270px;
+    height: 30px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0);
+    margin-bottom: 20px;
+}
+
+header .search form fieldset button{
+    width: 70px;
+    margin: 0px;
+    height: 30px;
+    border: none;
+    background: #fff;
+    display: inline-block;
+    padding: 0px;
+}
+
+/* main */
+main{
+    width: 463px;
+    height: 100%;
+    margin: auto;
+}
+
+main .main_image{
+    position: relative;
+    height: 325px;
+}
+
+main .main_image h2{
+    text-indent: -9999px;
+    display: none;
+}
+
+main .main_image .slider{
+    width: 463px;
+    height: 325px;
+    padding: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* 카테고리 */
+main .business_guide{
+    width: 450px;
+    margin: auto;
+}
+
+main .business_guide h2{
+    display: none;
+}
+
+main .business_guide ul li{
+    float: left;
+    width: 90px;
+    height: 80px;
+}
+
+main .business_guide ul li a{
+    display: inline-block;
+    width: 158px;
+    height: 120px;
+    text-indent: -9999px;
+}
+
+main .business_guide ul .tab01{
+    background: url(../images/business_01.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab02{
+    background: url(../images/business_02.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab03{
+    background: url(../images/business_03.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab04{
+    background: url(../images/business_04.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab05{
+    background: url(../images/business_05.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab06{
+    background: url(../images/business_06.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab07{
+    background: url(../images/business_07.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab08{
+    background: url(../images/business_08.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab09{
+    background: url(../images/business_09.gif);
+    background-size: cover;
+}
+
+main .business_guide ul .tab10{
+    background: url(../images/business_10.gif);
+    background-size: cover;
+}
+
+main .community{
+    float: left;
+    clear: both;
+    margin-top: 30px;
+}
+
+main .community a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main .community h2{
+    display: none;
+}
+
+main .community .notice, .news, .job_opening{
+    width: 463px;
+}
+
+main .community .notice ul li{
+    list-style-type: disc;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    display: none;
+}
+
+main .community .notice h3{
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #ccc;
+    margin: 0px;
+    width: 153px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+}
+
+main .community .news ul li{
+    list-style-type: disc;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    display: none;
+}
+
+main .community .news h3{
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #ccc;
+    margin: 0px;
+    width: 153px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+}
+
+
+main .community .job_opening ul li{
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    clear: both;
+    padding: 5px 0px 5px 0px;
+}
+
+main .community .job_opening h3{
+    background: rgb(7, 46, 138);
+    color: #fff;
+    margin: 0px;
+    width: 153px;
+    height: 32px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* 메뉴 */
+
+main .our_business{
+    width: 463px;
+   
+}
+
+main .our_business h2{
+    display: none;
+}
+
+/* 열린경영 */
+
+main .our_business .openBook_Management{
+    width: 463px;
+    float: right;
+}
+
+main .our_business .openBook_Management h3{
+    border: 1px solid #ccc;
+    height: 28px;
+    background: url(images/manage_01.gif) no-repeat;
+    background-position: right;
+    margin: 30px 0px 0px 0px;
+}
+
+main .our_business .openBook_Management ul{
+   background-color: #75b016; 
+   width: 443px;
+   height: 60px;
+   padding: 10px;
+}
+
+main .our_business .openBook_Management ul li{
+    font-size: 14px;
+    width: 105px;
+    padding: 5px 0px 5px 0px;
+    float: left;
+}
+
+main .our_business .openBook_Management ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 고객창구 */
+
+main .custom_center{
+    width: 463px;
+    float: right;
+}
+
+
+main .our_business .custom_center h3{
+    border: 1px solid #ccc;
+    height: 28px;
+    margin: 0px;
+    background: url(images/manage_02.gif) no-repeat;
+    background-position: right;
+}
+
+main .our_business .custom_center ul{
+   background-color: #0f95b2; 
+   width: 443px;
+   height: 60px;
+   padding: 10px;
+}
+
+main .our_business .custom_center ul li{
+    font-size: 14px;
+    width: 105px;
+    padding: 5px 0px 5px 0px;
+    float: left;
+}
+
+main .our_business .custom_center ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* KR 홍보 */
+
+main .kr_pr{
+    width: 463px;
+    float: right;
+}
+
+
+main .our_business .kr_pr h3{
+    border: 1px solid #ccc;
+    height: 28px;
+    margin: 0px;
+    background: url(images/manage_03.gif) no-repeat;
+    background-position: right;
+}
+
+main .our_business .kr_pr ul{
+   background-color: #6b63af; 
+   width: 443px;
+   height: 60px;
+   padding: 10px;
+}
+
+main .our_business .kr_pr ul li{
+    font-size: 14px;
+    width: 105px;
+    padding: 5px 0px 5px 0px;
+    float: left;
+}
+
+main .our_business .kr_pr ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer{
+    clear: both;
+    width: 463px;
+    margin: auto;
+    padding-top: 30px;
+    border-top: 1px #222 solid;
+}
+
+footer .footer_link{
+    width: 450px;
+    margin: auto;
+    position: relative;
+}
+
+footer .footer_link h2{
+    font-size: 15px;
+    height: 30px;
+    color: orange;
+    text-align: center;
+    border-radius: 5px;
+    background: url(images/arrow.gif) no-repeat #36353b;
+    background-position: right;
+    line-height: 30px;
+}
+
+footer .footer_link ul{
+    background: #36353b;
+    position: absolute;
+    width: 450px;
+    bottom: 25px;
+    display: none;
+}
+
+footer .footer_link ul li{
+    padding: 10px;
+}
+
+footer .footer_link ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p, address{
+    font-size: 13px;
+    margin: 0px;
+
+}
+
+footer p span{
+    color: rgb(14, 147, 224);
+}
