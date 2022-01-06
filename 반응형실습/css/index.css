@@ -10,7 +10,7 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 /* common */
 .hide{position:absolute;left:-9999px;top:-9999px}
 
-.footer{display:none}
+
 
 /* header */
 .header{
@@ -371,4 +371,65 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
  }
 
 
+ /* footer */
+
+ .footer{
+    border-top: 1px solid #999;
+    padding: 10px 2%;
+    position: relative;
+    z-index: 3;
+ }
+
+ .footer_link{
+     position: relative;
+ }
+
+ .footer_link h2 a{
+     display: block;
+     border-radius: 5px;
+     font-size: 13px;
+     color: #f28f31;
+     text-align: center;
+     line-height: 30px;
+     font-weight: normal;
+     background: #37363c url(../images/arrow.gif) no-repeat 96% center;
+ }
+
+
+ .footer_link ul{
+     height: 0;
+     overflow: hidden;
+     width: 100%;
+     position: absolute;
+     z-index: 3;
+     top: -175px;
+ }
+
+.footer_link li{
+    background: rgba(55, 55, 55, .9);
+    border-bottom: 1px solid #000;
+}
+
+
+.footer_link li a{
+    display: block;
+    line-height: 24px;
+    padding: 5px 5px 5px 10px;
+    color: #fff;
+}
+
+.footer_link li a:hover{
+    background: #333;
+}
+
+
+/* footer text */
+
+.bld{
+    font-weight: bold;
+}
+
+.blue_txt{
+    color: #2a7ccc;
+}
 

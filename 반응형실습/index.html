@@ -206,7 +206,7 @@
     
     <footer id="footer" class="footer">
         <div class="footer_link">
-            <h2>Footer Link</h2>
+            <h2><a href="#">Footer Link</a></h2>
             <ul>
                 <li><a href="#">개인정보처리방침</a></li>
                 <li><a href="#">영상정보처리기기 운영ㆍ관리방침</a></li>
@@ -216,10 +216,10 @@
             </ul>
         </div><!--footer_link-->
     
-        <p>고객센터 1588-7270  상담시간 09:00 ~ 18:00 (토요일/공휴일 제외)
+        <p><span class="bld">고객센터</span> <span class="bld blue_txt">1588-7270</span><span class="bld"> 상담시간 09:00 ~ 18:00 (토요일/공휴일 제외)</span>
         <address>우)34618 대전광역시 동구 중앙로 242 한국철도시설공단</address>
-        <p>▲ TEL : 1588-7270(통화료 사용자 부담) ▲ FAX : 042-607-3629</p>
-        <p>COPYRIGHT(C) 2016 BY KOREA RAIL NETWORK AUTHORITY. ALL RIGHTS RESERVED.</p>
+        <p><span class="blue_txt">▲ TEL : 1588-7270(통화료 사용자 부담)</span>▲ FAX : 042-607-3629</p>
+        <p>COPYRIGHT(C) 2016 <span class="bld">BY KOREA RAIL NETWORK AUTHORITY.</span> ALL RIGHTS RESERVED.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
     <script type="text/javascript">
@@ -230,6 +230,10 @@
 
             $('.search a').click(function(){
                 $('.search form').slideToggle(500);
+            });
+
+            $('.footer_link h2').click(function(){
+                $('.footer_link ul').slideToggle(500);
             });
         });
     </script>
