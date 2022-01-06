@@ -165,3 +165,31 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 .main_image1 img{
     width:100%
 }
+
+/* cont wrap */
+.cont_wrap{
+    padding: 0 2%;
+}
+
+/* business_guide */
+
+.business_guide{
+
+}
+
+.business_guide ul{
+    overflow: hidden;
+}
+
+.business_guide li{
+    float: left;
+    width: 20%;
+}
+
+.business_guide img{
+    width: 100%;
+}
+
+.bg_margin{
+    margin-top: -5px;
+}

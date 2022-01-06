@@ -12,3 +12,5 @@
 
 postion : absolute, fixed의 경우 태그의 속성을 강제로 변환한다.
 원칙은 display를 써야하지만.
+
+화면비례하여 여백을 줘야 할 경우 %
