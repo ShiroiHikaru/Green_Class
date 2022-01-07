@@ -205,6 +205,11 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
     height: 140px;
 }
 
+.community .comm_sel{
+    background: #10218b;
+    color: #fff;
+}
+
 /* notice */
 .notice{
     position: absolute;
