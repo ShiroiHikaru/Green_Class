@@ -201,22 +201,26 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 
 /* community */
 .community{
-    width: 49%;
-    float: left;
-    margin-right: 2%;
+    position: relative;
+    height: 140px;
 }
 
 /* notice */
 .notice{
-    margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    top: 40px;
 }
 
 .notice h3{
-    background: #0062c3;
-    font-size: 13px;
-    color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: -40px;
+    border: 1px solid #999;
+    width: 33.3%;
+    line-height: 40px;
+    text-align: center;
+    color: #62635e;
 }
 
 .notice li{
@@ -232,15 +236,25 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 /* news */
 
 .news{
-    margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    top: 40px;
 }
 
 .news h3{
-    background: #0062c3;
-    font-size: 13px;
-    color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: -40px;
+    border: 1px solid #999;
+    width: 33.3%;
+    left: 33.3%;
+    line-height: 40px;
+    text-align: center;
+    color: #62635e;
+}
+
+.news ul{
+    display: none;
 }
 
 .news li{
@@ -256,15 +270,26 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 /* job_opening */
 
 .job_opening{
-    margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    top: 40px;
 }
 
 .job_opening h3{
-    background: #0062c3;
-    font-size: 13px;
-    color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    color: #62635e;
+    font-size: 14px;
+    position: absolute;
+    left: 66.7%;
+    top: -40px;
+    width: 33.3%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.job_opening ul{
+    display: none;
 }
 
 .job_opening li{
@@ -279,8 +304,8 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 /* our_business */
 
 .our_business{
-    width: 49%;
-    float: left;
+    /* width: 49%;
+    float: left; */
     border: 1px solid #999;
     box-sizing: border-box;
 }
@@ -378,6 +403,7 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
     padding: 10px 2%;
     position: relative;
     z-index: 3;
+    margin-top: 40px;
  }
 
  .footer_link{
@@ -432,4 +458,6 @@ body{font-family:"나눔고딕","돋움",serif, sans-serif;font-size:12px;line-h
 .blue_txt{
     color: #2a7ccc;
 }
+
+
 
