@@ -10,6 +10,15 @@
             font-size: 20px;
         }
     </style>
+    <script type="text/javascript">
+        var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+        for (var word in mobileKeyWords){
+            if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+                location.href = "http://sirohika/dothome.co.kr/mobile";
+                break;
+            }
+        }
+    </script>
 </head>
 <body>
     웹사이트
